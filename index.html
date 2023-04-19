@@ -14,60 +14,62 @@
 </head>
 
 <body>
-  <div class="aaa">
+  <div class="header">
     <img src="./eisenhower-matrix.jpg">
     <a
-        class="more_inf"
+        class="more-info"
         href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
   </div>
-  <div class="centered-main-page-element">
-    <div id="topSectionForAddingElementToList">
+  <div class="main">
+    <div id="task-add">
       <label for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
+      <div class="task-add-wrapper">
         <input
             id="new-task"
-            class="task"
+            class="input-task"
             type="text">
-        <button type="button">
+        <button
+            type="button"
+            class="button">
           Add
         </button>
       </div>
     </div>
     <h3>Todo</h3>
-    <ul id="incompleteTasks">
+    <ul id="incomplete-tasks">
       <li>
         <input type="checkbox">
-        <label class="task">Pay Bills</label>
+        <label class="label-task">Pay Bills</label>
         <input
             type="text"
-            class="task">
+            class="input-task">
         <button
-            class="edit"
+            class="button-edit"
             type="button">
           Edit
         </button>
         <button
-            class="delete"
+            class="button-delete"
             type="button">
           <img src="./remove.svg">
         </button>
       </li>
-      <li class="editMode">
+      <li class="edit-mode">
         <input type="checkbox">
-        <label class="task">Go Shopping</label>
+        <label class="label-task">Go Shopping</label>
         <input
             type="text"
             value="Go Shopping"
-            class="task">
+            class="input-task">
         <button
-            class="edit"
+            class="button-edit"
             type="button">
           Save
         </button>
         <button
-            class="delete"
+            class="button-delete"
             type="button">
           <img src="./remove.svg">
         </button>
@@ -79,17 +81,17 @@
         <input
             type="checkbox"
             checked>
-        <label class="task">See the Doctor</label>
+        <label class="label-task">See the Doctor</label>
         <input
             type="text"
-            class="task">
+            class="input-task">
         <button
-            class="edit"
+            class="button-edit"
             type="button">
           Edit
         </button>
         <button
-            class="delete"
+            class="button-delete"
             type="button">
           <img src="./remove.svg">
         </button>
