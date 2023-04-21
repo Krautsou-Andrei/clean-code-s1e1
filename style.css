@@ -25,11 +25,11 @@
   text-align: right;
 }
 
-.header-image {
+.header__image {
   width: 100%;
 }
 
-.more-info {
+.header__more-info {
   font-family: fantasy, cursive;
 }
 
@@ -87,23 +87,32 @@ button {
 }
 
 /* Heading */
+.add-task__label,
+.incomplete__title,
+.completed__title{
+  padding: 30px 0 10px;
+  margin: 0;
+}
+
 .section-title,
 .label-new-task {
   color: #333;
   font-weight: 700;
   font-size: 15px;
   border-bottom: 2px solid #333;
-  padding: 30px 0 10px;
-  margin: 0;
   text-transform: uppercase;
 }
 
-.input-task {
+.add-task__input,
+.item__input{
   margin: 0;
+  padding: 0 9px;
+}
+
+.input-task {
   font-size: 18px;
   line-height: 18px;
   height: 21px;
-  padding: 0 9px;
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
@@ -116,9 +125,12 @@ button {
 }
 
 /* New Task */
+.add-task__label{
+  margin: 0 0 20px;
+}
+
 .label-new-task {
   display: block;
-  margin: 0 0 20px;
 }
 
 .add-task .input-task {
@@ -126,9 +138,12 @@ button {
 }
 
 /* Task list */
-.task-item {
-  overflow: hidden;
+.task-list__item {
   padding: 20px 0;
+}
+
+.item{
+  overflow: hidden;
   border-bottom: 1px solid #eee;
 
   display: flex;
@@ -136,22 +151,25 @@ button {
   align-items: center;
 }
 
-.task-item > * {
+.task-list__item > * {
   vertical-align: middle;
 }
 
-.task-item > .input-checkbox {
+.item__checkbox{
   margin: 0 10px;
 }
 
-.task-item > .label-task {
+.item__label{
   padding-left: 10px;
+}
+
+.task-list__item > .label-task {
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-item > .input-task {
+.task-list__item > .input-task {
   width: 226px;
 }
 

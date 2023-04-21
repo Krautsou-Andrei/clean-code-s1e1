@@ -15,7 +15,7 @@ var completedTasksHolder = document.getElementById("completed-tasks"); //complet
 //New task list item
 var createNewTaskElement = function (taskString) {
   var listItem = document.createElement("li");
-  listItem.className = "task-item";
+  listItem.className = "task-list__item item";
 
   var nextId = incompleteTaskHolder.getElementsByClassName("label-task").length 
       + completedTasksHolder.getElementsByClassName("label-task").length +1;
@@ -23,7 +23,7 @@ var createNewTaskElement = function (taskString) {
 
   //input (checkbox)
   var checkBox = document.createElement("input"); //checkbx
-  checkBox.className = "input-checkbox";
+  checkBox.className = "item__checkbox input-checkbox";
   //label
   var label = document.createElement("label"); //label
   label.setAttribute("for",`label-task-${nextId}`)
@@ -36,21 +36,21 @@ var createNewTaskElement = function (taskString) {
   //button.delete
   var deleteButton = document.createElement("button"); //delete button
   var deleteButtonImg = document.createElement("img"); //delete button image
-  deleteButtonImg.className = "image-sourse";
+  deleteButtonImg.className = "button__image image-sourse";
   deleteButtonImg.setAttribute("alt","");
 
   label.innerText = taskString;
-  label.className = "label-task";
+  label.className = "item__label label-task";
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
   editInput.type = "text";
-  editInput.className = "input-task";
+  editInput.className = "item__input input-task";
 
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className = "button button-edit";
+  editButton.className = "item__button button button-edit";
 
-  deleteButton.className = "button button-delete";
+  deleteButton.className = "item__button button button-delete";
   deleteButtonImg.src = "./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
 
@@ -85,7 +85,7 @@ var editTask = function () {
   var listItem = this.parentNode;
 
   var editInput = listItem.querySelector(".input-task");
-  var label = listItem.querySelector("label");
+  var label = listItem.querySelector(".label-task");
   var editBtn = listItem.querySelector(".button-edit");
   var containsClass = listItem.classList.contains("edit-mode");
   //If class of the parent is .editmode

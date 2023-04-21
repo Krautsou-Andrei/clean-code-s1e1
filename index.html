@@ -16,11 +16,11 @@
 <body class="body">
   <header class="header">
     <img
-        class="header-image"
+        class="header__image"
         src="./eisenhower-matrix.jpg"
         alt="">
     <a
-        class="more-info"
+        class="header__more-info"
         href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
@@ -28,118 +28,124 @@
   <main class="main">
     <article
         id="task-add"
-        class="add-task">
+        class="main__add-task add-task">
       <h1 class="visually-hidden">Todo list</h1>
       <label
           for="new-task"
-          class="label-new-task">
+          class="add-task__label label-new-task">
         Add Item
       </label>
-      <section class="task-add-wrapper">
+      <section class="add-task__section task-add-wrapper">
         <input
             id="new-task"
-            class="input-task"
+            class="add-task__input input-task"
             type="text">
         <button
             type="button"
-            class="button">
+            class="add-task__button button">
           Add
         </button>
       </section>
     </article>
-    <h2 class="section-title">Todo</h2>
-    <ul
-        id="incomplete-tasks"
-        class="task-list">
-      <li class="task-item">
-        <input
-            class="input-checkbox"
-            type="checkbox">
-        <label
-            for="label-task-1"
-            class="label-task">
-          Pay Bills
-        </label>
-        <input
-            id="label-task-1"
-            class="input-task"
-            type="text">
-        <button
-            class="button button-edit"
-            type="button">
-          Edit
-        </button>
-        <button
-            class="button button-delete"
-            type="button">
-          <img
-              class="image-sourse"
-              src="./remove.svg"
-              alt="">
-        </button>
-      </li>
-      <li class="task-item edit-mode">
-        <input
-            class="input-checkbox"
-            type="checkbox">
-        <label
-            for="abel-task-2"
-            class="label-task">
-          Go Shopping
-        </label>
-        <input
-            id="label-task-2"
-            class="input-task"
-            type="text"
-            value="Go Shopping">
-        <button
-            class="button button-edit"
-            type="button">
-          Save
-        </button>
-        <button
-            class="button button-delete"
-            type="button">
-          <img
-              class="image-sourse"
-              src="./remove.svg"
-              alt="">
-        </button>
-      </li>
-    </ul>
-    <h2 class="section-title">Completed</h2>
-    <ul
-        id="completed-tasks"
-        class="task-list list-completed">
-      <li class="task-item">
-        <input
-            class="input-checkbox"
-            type="checkbox"
-            checked>
-        <label
-            for="label-task-3"
-            class="label-task">
-          See the Doctor
-        </label>
-        <input
-            id="label-task-3"
-            class="input-task"
-            type="text">
-        <button
-            class="button button-edit"
-            type="button">
-          Edit
-        </button>
-        <button
-            class="button button-delete"
-            type="button">
-          <img
-              class="image-sourse"
-              src="./remove.svg"
-              alt="">
-        </button>
-      </li>
-    </ul>
+    <article class="main__tasks">
+      <section class="incomplete">
+        <h2 class="incomplete__title section-title">Todo</h2>
+        <ul
+            id="incomplete-tasks"
+            class="incomplete__list task-list">
+          <li class="task-list__item item">
+            <input
+                class="item__checkbox input-checkbox"
+                type="checkbox">
+            <label
+                for="label-task-1"
+                class="item__label label-task">
+              Pay Bills
+            </label>
+            <input
+                id="label-task-1"
+                class="item__input input-task"
+                type="text">
+            <button
+                class="item__button button button-edit"
+                type="button">
+              Edit
+            </button>
+            <button
+                class="item__button button button-delete"
+                type="button">
+              <img
+                  class="button__image image-sourse"
+                  src="./remove.svg"
+                  alt="">
+            </button>
+          </li>
+          <li class="task-list__item item edit-mode">
+            <input
+                class="item__checkbox input-checkbox"
+                type="checkbox">
+            <label
+                for="abel-task-2"
+                class="item__label label-task">
+              Go Shopping
+            </label>
+            <input
+                id="label-task-2"
+                class="item__input input-task"
+                type="text"
+                value="Go Shopping">
+            <button
+                class="item__button button button-edit"
+                type="button">
+              Save
+            </button>
+            <button
+                class="item__button button button-delete"
+                type="button">
+              <img
+                  class="button__image image-sourse"
+                  src="./remove.svg"
+                  alt="">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="completed">
+        <h2 class="completed__title section-title">Completed</h2>
+        <ul
+            id="completed-tasks"
+            class="completed__list task-list list-completed">
+          <li class="task-list__item item">
+            <input
+                class="item__checkbox input-checkbox"
+                type="checkbox"
+                checked>
+            <label
+                for="label-task-3"
+                class="item__label label-task">
+              See the Doctor
+            </label>
+            <input
+                id="label-task-3"
+                class="item__input input-task"
+                type="text">
+            <button
+                class="item__button button button-edit"
+                type="button">
+              Edit
+            </button>
+            <button
+                class="item__button button button-delete"
+                type="button">
+              <img
+                  class="button__image image-sourse"
+                  src="./remove.svg"
+                  alt="">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </article>
   </main>
   <script src="app.js"></script>
 </body>
