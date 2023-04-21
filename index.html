@@ -14,7 +14,7 @@
 </head>
 
 <body class="body">
-  <div class="header">
+  <header class="header">
     <img
         class="header-image"
         src="./eisenhower-matrix.jpg"
@@ -24,17 +24,18 @@
         href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
-  </div>
-  <div class="main">
-    <div
+  </header>
+  <main class="main">
+    <article
         id="task-add"
         class="add-task">
+      <h1 class="visually-hidden">Todo list</h1>
       <label
           for="new-task"
           class="label-new-task">
         Add Item
       </label>
-      <div class="task-add-wrapper">
+      <section class="task-add-wrapper">
         <input
             id="new-task"
             class="input-task"
@@ -44,9 +45,9 @@
             class="button">
           Add
         </button>
-      </div>
-    </div>
-    <h3 class="section-title">Todo</h3>
+      </section>
+    </article>
+    <h2 class="section-title">Todo</h2>
     <ul
         id="incomplete-tasks"
         class="task-list">
@@ -54,8 +55,13 @@
         <input
             class="input-checkbox"
             type="checkbox">
-        <label class="label-task">Pay Bills</label>
+        <label
+            for="label-task-1"
+            class="label-task">
+          Pay Bills
+        </label>
         <input
+            id="label-task-1"
             class="input-task"
             type="text">
         <button
@@ -66,15 +72,23 @@
         <button
             class="button button-delete"
             type="button">
-          <img class="image-sourse" src="./remove.svg" alt="">
+          <img
+              class="image-sourse"
+              src="./remove.svg"
+              alt="">
         </button>
       </li>
       <li class="task-item edit-mode">
         <input
             class="input-checkbox"
             type="checkbox">
-        <label class="label-task">Go Shopping</label>
+        <label
+            for="abel-task-2"
+            class="label-task">
+          Go Shopping
+        </label>
         <input
+            id="label-task-2"
             class="input-task"
             type="text"
             value="Go Shopping">
@@ -86,11 +100,14 @@
         <button
             class="button button-delete"
             type="button">
-          <img class="image-sourse" src="./remove.svg" alt="">
+          <img
+              class="image-sourse"
+              src="./remove.svg"
+              alt="">
         </button>
       </li>
     </ul>
-    <h3 class="section-title">Completed</h3>
+    <h2 class="section-title">Completed</h2>
     <ul
         id="completed-tasks"
         class="task-list list-completed">
@@ -99,8 +116,13 @@
             class="input-checkbox"
             type="checkbox"
             checked>
-        <label class="label-task">See the Doctor</label>
+        <label
+            for="label-task-3"
+            class="label-task">
+          See the Doctor
+        </label>
         <input
+            id="label-task-3"
             class="input-task"
             type="text">
         <button
@@ -111,11 +133,14 @@
         <button
             class="button button-delete"
             type="button">
-          <img class="image-sourse" src="./remove.svg" alt="">
+          <img
+              class="image-sourse"
+              src="./remove.svg"
+              alt="">
         </button>
       </li>
     </ul>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 
